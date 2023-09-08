@@ -9,7 +9,7 @@ body {
 
 textarea {
     max-width: 100vw;
-    min-width: 100vw;
+    min-width: 95vw;
     max-height: 100vh;
     min-height: calc(100vh - 60px);
     background-color: rgb(23, 23, 23);
