@@ -20,10 +20,9 @@ div textarea {
     left: 0;
 }
 
-div {
+div{
     position: relative;
 }
-
 
 textarea::backdrop {
     border-style: none;
