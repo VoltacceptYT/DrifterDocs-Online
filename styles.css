@@ -29,7 +29,6 @@ textarea {
 *::-webkit-scrollbar {
     width: 10px;
     background: rgb(41,41,41);
-    border-radius: 25%;
 }
 
 *::-webkit-scrollbar-track {
