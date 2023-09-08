@@ -7,6 +7,7 @@ body {
 }
 
 textarea {
+    border: 0px, none;
     background-color: rgb(29, 29, 29);
     color: rgb(253, 251, 249);
     font-weight: 500;
@@ -14,12 +15,6 @@ textarea {
 }
 
 textarea::backdrop {
-    background-color: rgb(29, 29, 29);
-}
-textarea::spelling-error{
-    color: rgb(237, 148, 7);
-}
-textarea::grammar-error{
-    color: rgb(101, 119, 179);
-
+    border: 0px, none;
+    background-color: rgb(32, 32, 32);
 }
