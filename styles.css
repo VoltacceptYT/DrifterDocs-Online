@@ -26,11 +26,11 @@ textarea {
 
 *::-webkit-scrollbar {
     width: 10px;
-    background: rgb(38,38,38);
+    background: rgb(41,41,41);
 }
 
 *::-webkit-scrollbar-track {
-    background: rgb(38,38,38);
+    background: rgb(32,32,32);
 }
 
 *::-webkit-scrollbar-thumb {
