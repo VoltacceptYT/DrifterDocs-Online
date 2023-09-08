@@ -1,12 +1,12 @@
 {
-  "name": "PWA Tutorial",
-  "short_name": "PWA",
+  "name": "DrifterDocs for the Web",
+  "short_name": "DrifterDocs - Online",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#5900b3",
-  "theme_color": "black",
+  "background_color": "#171717",
+  "theme_color": "#171717",
   "scope": ".",
-  "description": "This is a PWA tutorial.",
+  "description": "DrifterDocs for the Web.",
   "icons": [
     {
       "src": "images/icon-192x192.png",
