@@ -20,8 +20,3 @@ textarea::backdrop {
     border-style: none;
     background-color: rgb(23, 23, 23);
 }
-
-textarea::selection {
-    border-style: none;
-    background-color: rgb(32, 32, 32);
-}
