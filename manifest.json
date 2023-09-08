@@ -3,8 +3,8 @@
   "short_name": "DrifterDocs - Online",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#171717",
-  "theme_color": "#171717",
+  "background_color": "#202020",
+  "theme_color": "#202020",
   "scope": ".",
   "description": "DrifterDocs for the Web.",
   "icons": [
