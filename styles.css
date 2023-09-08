@@ -7,7 +7,7 @@ body {
 }
 
 div textarea {
-    background-attachment: fixed;
+    transform: translate(-50%,-50%);
     border-style: none;
     background-color: rgb(23, 23, 23);
     color: rgb(253, 251, 249);
