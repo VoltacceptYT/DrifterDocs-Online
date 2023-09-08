@@ -1,6 +1,6 @@
 {
   "name": "DrifterDocs - Online",
-  "short_name": "DrifterDocs - Online",
+  "short_name": "DrifterDocs",
   "start_url": "/DrifterDocs-Online/",
   "display": "standalone",
   "orientation": "portrait-primary",
