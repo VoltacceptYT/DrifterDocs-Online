@@ -6,7 +6,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-textarea {
+div textarea {
     width: 100%;
     height: 100%;
     border-style: none;
@@ -19,6 +19,10 @@ textarea {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+div {
+    position: relative;
 }
 
 
