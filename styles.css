@@ -7,7 +7,8 @@ body {
 }
 
 textarea {
-    border: 0px, none;
+    resize: none;
+    border-style: none;
     background-color: rgb(29, 29, 29);
     color: rgb(253, 251, 249);
     font-weight: 500;
@@ -15,6 +16,6 @@ textarea {
 }
 
 textarea::backdrop {
-    border: 0px, none;
+    border-style: none;
     background-color: rgb(32, 32, 32);
 }

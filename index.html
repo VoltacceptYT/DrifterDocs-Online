@@ -34,7 +34,7 @@
         GeeksforGeeks
     </h1>
 
-    <Textarea>
+    <Textarea id="Textarea">
         
     </Textarea>
 
@@ -42,6 +42,8 @@
     <script>
         window.addEventListener('load', () => {
             registerSW();
+            document.getElementById(Textarea).style.width = window.screen.width;
+            document.getElementById(Textarea).style.height = window.screen.height;
         });
 
         // Register the Service Worker
