@@ -24,7 +24,7 @@ textarea {
     -moz-box-shadow: none;
 }
 
-button, input[type=file] {
+button, #openDoc {
     background-color: rgb(41,41,41);
     color: rgb(253, 251, 249);
     font-weight: bold;
@@ -34,7 +34,7 @@ button, input[type=file] {
     font-size: 25px;
 }
 
-    button:hover, input[type=file]:hover {
+    button:hover, #openDoc:hover {
         background-color: rgb(38, 38, 38);
         color: rgb(253, 251, 249);
         font-weight: bold;
