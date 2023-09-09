@@ -32,8 +32,9 @@
     <h1>
         DrifterDocs - Online
     </h1>
-    <textarea></textarea>
-    
+    <button id="saveDocDoc">saveDoc File</button>
+    <textarea id="doc"></textarea>
+
 
 
     <script>
@@ -54,6 +55,21 @@
                 }
             }
         }
+    </script>
+    <script>
+        const doc = document.getElementById("doc");
+        const saveDoc = document.getElementById("saveDoc");
+
+        saveDoc.addEventListener("click", function () {
+            const file = new File([doc.value], "document.drifterdoc", { type: "text/plain" });
+            const url = URL.createObjectURL(file);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = file.name;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
     </script>
 
 </body>
