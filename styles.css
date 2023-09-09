@@ -49,7 +49,7 @@ input[type=file]::-webkit-file-upload-button {
 }
 
 input[type=file]::before {
-    content: 'Open | <i class="bi bi-upload"></i>>';
+    content: 'Open';
     background-color: rgb(41,41,41);
     color: rgb(253, 251, 249);
     font-weight: bold;
