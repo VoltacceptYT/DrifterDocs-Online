@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Title -->
-    <title>DrifterDocs - Online</title>
+    <title>Untitled Document</title>
 
     <!-- Meta Tags required for
         Progressive Web App -->
@@ -64,7 +64,7 @@
         const saveDoc = document.getElementById("saveDoc");
 
         saveDoc.addEventListener("click", function () {
-            const file = new File([doc.value], "document.drifterdoc", { type: "text/plain" });
+            const file = new File([doc.value], "document.drifterdoc");
             const url = URL.createObjectURL(file);
             const link = document.createElement("a");
             link.href = url;
