@@ -58,6 +58,7 @@ input[type=file]::before {
     font-size: 25px;
     -webkit-user-select: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 input[type=file]:hover::before {
@@ -78,6 +79,7 @@ input[type=file]:active::before {
 
 *::-webkit-scrollbar-track {
     background: rgb(32,32,32);
+    width: 10px
 }
 
 *::-webkit-scrollbar {
