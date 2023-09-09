@@ -37,7 +37,9 @@
     </h1>
     <span>
         <button id="saveDoc">Save | <i class="bi bi-download"></i></button>
-        <input type="file" accept=".drifterdoc" id="openDoc" onchange="openDoc()">
+        <button id="openDoc">Open | <i class="bi bi-upload"></i></button>
+
+        <input hidden type="file" accept=".drifterdoc" id="docInput" onchange="openDoc()">
     </span>
     <textarea id="doc"></textarea>
 
@@ -78,13 +80,19 @@
         });
     </script>
     <script>
+        var doc = document.getElementById("doc");
+        var openDoc = document.getElementById("openDoc")
+        var docInput = document.getElementById("docInput");
+
+        saveDoc.addEventListener("click", function () {
+            docInput.click();
+        });
+
         function openDoc() {
-            var openDoc = document.getElementById("openDoc");
-            var file = openDoc.files[0];
+            var file = docInput.files[0];
             var reader = new FileReader();
             reader.onload = function (e) {
                 var content = e.target.result;
-                var doc = document.getElementById("doc");
                 doc.textContent = content;
             }
             reader.readAsText(file);
