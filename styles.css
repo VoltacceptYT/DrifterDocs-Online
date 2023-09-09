@@ -80,6 +80,10 @@ input[type=file]:active::before {
     background: rgb(32,32,32);
 }
 
+*::-webkit-scrollbar {
+    background: rgb(32,32,32);
+}
+
 *::-webkit-scrollbar-thumb {
     background: rgb(41,41,41);
     border-radius: 100px;
