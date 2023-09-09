@@ -41,22 +41,21 @@ button {
         font-size: 25px;
     }
 
-input[type=file]
+input[type=file] {
+    color: transparent;
+}
 input[type=file]::-webkit-file-upload-button {
     visibility: hidden;
 }
 
 input[type=file]::before {
     content: 'Open | <i class="bi bi-upload"></i>>';
-    display: inline-block;
     background-color: rgb(41,41,41);
     color: rgb(253, 251, 249);
     font-weight: bold;
     border-style: none;
     margin: 0px;
     font-size: 25px;
-    outline: none;
-    white-space: nowrap;
     -webkit-user-select: none;
     cursor: pointer;
 }
