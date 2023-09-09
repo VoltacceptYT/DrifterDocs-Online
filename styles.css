@@ -41,12 +41,13 @@ button {
         font-size: 25px;
     }
 
+input[type=file]
 input[type=file]::-webkit-file-upload-button {
     visibility: hidden;
 }
 
 input[type=file]::before {
-    content: 'Select some files';
+    content: 'Open | <i class="bi bi-upload"></i>>';
     display: inline-block;
     background-color: rgb(41,41,41);
     color: rgb(253, 251, 249);
