@@ -41,6 +41,11 @@ button {
         font-size: 25px;
     }
 
+input[type=file]::file-selector-button, input[type=file] {
+    position: absolute;
+    display: none;
+}
+
 *::-webkit-scrollbar-track {
     background: rgb(32,32,32);
 }
