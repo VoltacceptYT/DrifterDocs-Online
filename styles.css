@@ -41,31 +41,43 @@ button {
         font-size: 25px;
     }
 
-input[type=file]::file-selector-button, input[type=file] {
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type=file]::before {
+    content: 'Select some files';
+    display: inline-block;
     background-color: rgb(41,41,41);
     color: rgb(253, 251, 249);
     font-weight: bold;
     border-style: none;
     margin: 0px;
     font-size: 25px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
 }
 
+input[type=file]:hover::before {
+    background-color: rgb(38, 38, 38);
+    color: rgb(253, 251, 249);
+    font-weight: bold;
+    border-style: none;
+    font-size: 25px;
+}
 
-    input[type=file]::file-selector-button:hover, input[type=file]:hover {
-        background-color: rgb(38, 38, 38);
-        color: rgb(253, 251, 249);
-        font-weight: bold;
-        border-style: none;
-        font-size: 25px;
-    }
-    input[type=file]::placeholder, input[type=file]::target-text{
-        background-color: rgba(0,0,0,0);
-        color: rgb(253, 251, 249);
-        font-weight: bold;
-        border-style: none;
-        margin: 0px;
-        font-size: 15px;
-    }
+input[type=file]:active::before {
+    background-color: rgb(38, 38, 38);
+    color: rgb(253, 251, 249);
+    font-weight: bold;
+    border-style: none;
+    font-size: 25px;
+}
 
 *::-webkit-scrollbar-track {
     background: rgb(32,32,32);
