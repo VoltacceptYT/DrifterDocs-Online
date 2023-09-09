@@ -35,7 +35,10 @@
     <h1>
         DrifterDocs - Online
     </h1>
-    <button id="saveDoc">Save | <i class="bi bi-download"></i></button>
+    <span>
+        <button id="saveDoc">Save | <i class="bi bi-download"></i></button>
+        <input type="file" id="openDoc" onchange="openDoc()">
+    </span>
     <textarea id="doc"></textarea>
 
 
@@ -73,6 +76,19 @@
             link.click();
             document.body.removeChild(link);
         });
+    </script>
+    <script>
+        function openDoc() {
+            var openDoc = document.getElementById("openDoc");
+            var file = openDoc.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var content = e.target.result;
+                var doc = document.getElementById("doc");
+                doc.textContent = content;
+            }
+            reader.readAsText(file);
+        }
     </script>
 
 </body>
