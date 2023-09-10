@@ -8,14 +8,14 @@ body {
 }
 
 textarea {
-    max-width: 100vw;
-    min-width: 98vw;
+    max-width: 97.8vw;
+    min-width: 97.8vw;
     max-height: 100vh;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     background-color: rgb(23, 23, 23);
     color: rgb(253, 251, 249);
     font-weight: 500;
-    font-family: 'Ink Free';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-style: solid;
     border-width: 5px;
     border-color: rgb(41,41,41);
@@ -105,7 +105,7 @@ input[type=file]::-webkit-file-upload-button {
 
 *::-webkit-scrollbar-track {
     background: rgb(32,32,32);
-    width: 10px
+    width: 5px;
 }
 
 *::-webkit-scrollbar {
@@ -117,6 +117,6 @@ input[type=file]::-webkit-file-upload-button {
     border-radius: 100px;
     border-style: solid;
     border-color: rgb(41,41,41);
-    width: 5px;
     align-self: center;
+    width: 10px;
 }
